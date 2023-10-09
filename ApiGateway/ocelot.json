@@ -1,0 +1,152 @@
+{
+    "GlobalConfiguration": {
+        "BaseUrl": "http://localhost:1111"
+    },
+    "Routes": [
+        {
+            "UpstreamPathTemplate": "/gateway/reminder",
+            "UpstreamHttpMethod": [ "Get" ],
+            "DownstreamPathTemplate": "/api/reminder",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5229
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/gateway/reminder",
+            "UpstreamHttpMethod": [ "Get", "Delete" ],
+            "DownstreamPathTemplate": "/api/reminder/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5229
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/gateway/reminder/",
+            "UpstreamHttpMethod": [ "Post", "Put" ],
+            "DownstreamPathTemplate": "/api/reminder/",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5229
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/gateway/user",
+            "UpstreamHttpMethod": [ "Get" ],
+            "DownstreamPathTemplate": "/api/users",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5229
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/gateway/user/{id}",
+            "UpstreamHttpMethod": [ "Get", "Delete" ],
+            "DownstreamPathTemplate": "/api/users/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5216
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/gateway/user",
+            "UpstreamHttpMethod": [ "Post", "Put" ],
+            "DownstreamPathTemplate": "/api/user/regsiter",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5216
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/gateway/note",
+            "UpstreamHttpMethod": [ "Get" ],
+            "DownstreamPathTemplate": "/api/note",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5174
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/gateway/note",
+            "UpstreamHttpMethod": [ "Get", "Delete" ],
+            "DownstreamPathTemplate": "/api/note/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5174
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/gateway/note/",
+            "UpstreamHttpMethod": [ "Post", "Put" ],
+            "DownstreamPathTemplate": "/api/note/",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5174
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/gateway/category",
+            "UpstreamHttpMethod": [ "Get" ],
+            "DownstreamPathTemplate": "/api/category",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5122
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/gateway/category",
+            "UpstreamHttpMethod": [ "Get", "Delete" ],
+            "DownstreamPathTemplate": "/api/category/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5122
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/gateway/category/",
+            "UpstreamHttpMethod": [ "Post", "Put" ],
+            "DownstreamPathTemplate": "/api/category/",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5122
+                }
+            ]
+        }
+
+    ]
+}
